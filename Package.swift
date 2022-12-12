@@ -12,11 +12,11 @@ let package = Package(
     products: [
         .library(
             name: "DepCharts",
-            targets: ["Charts"]),
+            targets: ["DepCharts"]),
         .library(
             name: "ChartsDynamic",
             type: .dynamic,
-            targets: ["Charts"])
+            targets: ["DepCharts"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-algorithms", from: "1.0.0")
