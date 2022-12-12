@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Charts",
+    name: "DepCharts",
     platforms: [
           .iOS(.v12),
           .tvOS(.v12),
@@ -11,7 +11,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Charts",
+            name: "DepCharts",
             targets: ["Charts"]),
         .library(
             name: "ChartsDynamic",
@@ -23,7 +23,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Charts",
+            name: "DepCharts",
             dependencies: [.product(name: "Algorithms", package: "swift-algorithms")]
         )
     ],
